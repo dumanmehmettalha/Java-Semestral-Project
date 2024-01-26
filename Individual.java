@@ -1,6 +1,7 @@
 package DistributionSystem;
 
-public class Individual extends Subscriber {
+public class Individual extends Subscriber implements java.io.Serializable {
+private static final long serialVersionUID = 1L;
 private String creditCardNr;
 private int expiremonth, expireYear;
 private int CCV;

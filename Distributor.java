@@ -148,6 +148,7 @@ public void saveState(String filename) {
 @SuppressWarnings("unchecked")
 public void loadState(String filename) {
     try {
+    	journals.clear();
         ObjectInputStream reader = new ObjectInputStream(new FileInputStream(filename));
 		Hashtable<String,Journal> journals= (Hashtable<String,Journal>)reader.readObject();
         System.out.println("Reading process is completed.");
